@@ -26,7 +26,7 @@ class route
                 $this->action = $patharr[1];
                 unset($patharr[1]);
             } else {
-                $this->action = 'index';
+                $this->action = conf::get('ACTION','route');
             }
 
             $count = count($patharr) + 2;
@@ -39,8 +39,8 @@ class route
             }
 
         } else {
-            $this->ctrl = 'index';
-            $this->action = 'index';
+            $this->ctrl = conf::get('CTRL','route');
+            $this->action = conf::get('ACTION','route');
         }
     }
 }

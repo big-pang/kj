@@ -1,6 +1,6 @@
 {
-  "name": "vendor_name/package_name",
-  "description": "description_text",
+  "name": "bigpang php",
+  "description": "php Framework",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
@@ -8,5 +8,11 @@
       "name": "author's name",
       "email": "email@example.com"
     }
-  ]
+  ],
+  "require":{
+    "php":">= 5.3.0",
+    "filp/whoops":"*",
+    "symfony/var-dumper": "3.1.x-dev",
+    "catfan/medoo": "v1.1.2"
+  }
 }

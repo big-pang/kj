@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bigpang
- * Date: 2016/8/23
- * Time: 13:17
- */
+namespace core\lib;
+
+class model extends \medoo
+{
+    public function __construct()
+    {
+        $option = conf::all('database');
+
+        parent::__construct($option);
+    }
+}
